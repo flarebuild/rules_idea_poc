@@ -2,12 +2,14 @@
 
 A rudimentary proof-of-concept implementation of IDEA's [Shared Indexes](https://www.jetbrains.com/help/idea/shared-indexes.html) under Bazel, circa September 2020.
 
+**Not meant for production usage.** A production-ready version of this tool is under active development, with more information to be announced soon - contact hello@flare.build in the meantime if you'd like to contribute.
+
 ## Shortcomings
 
 1. Everything here is defined as a simple runnable workspace rule that invokes a script and then cURL's the results up.
    - This basic PoC approach is similar to how tools like `gazelle` run (getting a handle to the workspace source rather than declaring inputs) but thats less than ideal in this case
    - A _build_ rule should be created to generate cacheable outputs
-     - Perhaps supported by something like an aspect or _generated_ and correct recursive `"srcs"` `filegroup`s like the bazel source repository has (these don't seem hand written)--be wary of a simplistic recusive filegroup though as subpackages break these.
+      - Perhaps supported by something like an aspect or _generated_ and correct recursive `"srcs"` `filegroup`s like the bazel source repository has (these don't seem hand written)--be wary of a simplistic recusive filegroup though as subpackages break these.
      - Ideally these actions can also run in parallel and remotely.
 2. IDE wrapping script is pretty rudimentary
     - It doesn't support platforms other than macOS
