@@ -1,4 +1,4 @@
-[![CI](https://github.com/kigster/rules_idea_poc/actions/workflows/bazel.yml/badge.svg)](https://github.com/kigster/rules_idea_poc/actions/workflows/bazel.yml)
+[![CI](https://github.com/flarebuild/rules_idea_poc/actions/workflows/bazel.yml/badge.svg)](https://github.com/flarebuild/rules_idea_poc/actions/workflows/bazel.yml)
 
 # rules_idea_poc
 
