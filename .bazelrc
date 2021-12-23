@@ -1,1 +1,7 @@
+common --enable_platform_specific_config
+build --verbose_failures
+
+# User-specific .bazelrc
+try-import user.bazelrc
+
 build --workspace_status_command=scripts/workspace_status.sh

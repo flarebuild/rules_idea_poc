@@ -123,7 +123,7 @@ def _impl(repository_ctx):
         content = IDE_PROPERTIES_CONTENT,
     )
 
-jetbrains_shared_index = repository_rule(
+jetbrains_shared_index_runtime = repository_rule(
     implementation= _impl,
     local = True,
     attrs = {

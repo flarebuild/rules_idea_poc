@@ -1,3 +1,5 @@
+[![CI](https://github.com/flarebuild/rules_idea_poc/actions/workflows/bazel.yml/badge.svg)](https://github.com/flarebuild/rules_idea_poc/actions/workflows/bazel.yml)
+
 # rules_idea_poc
 
 A rudimentary proof-of-concept implementation of IDEA's [Shared Indexes](https://www.jetbrains.com/help/idea/shared-indexes.html) under Bazel, circa September 2020.
@@ -54,5 +56,5 @@ directory: 1 file: 6
 
 ### Digging deeper
 
-- The source for the targets invoked above is defined in `//jetbrains/jetbrains_shared_index.bzl`
+- The source for the targets invoked above is defined in `//jetbrains/jetbrains_shared_index_runtime.bzl`
 - All of the output for the tools can be found in `bazel-jetbrains-out/` via the convenience symlink created, including all of the other content created by Jebtrains IDEs, be sure to inspect this output during further development.
