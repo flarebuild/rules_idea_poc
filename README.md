@@ -1,3 +1,5 @@
+[![CI](https://github.com/kigster/rules_idea_poc/actions/workflows/bazel.yml/badge.svg)](https://github.com/kigster/rules_idea_poc/actions/workflows/bazel.yml)
+
 # rules_idea_poc
 
 A rudimentary proof-of-concept implementation of IDEA's [Shared Indexes](https://www.jetbrains.com/help/idea/shared-indexes.html) under Bazel, circa September 2020.
