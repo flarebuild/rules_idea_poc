@@ -27,3 +27,6 @@ jobs:
       # build
       - name: Build the code
         run: bazel build //...
+
+      - name: Run the hello world 
+        run: bazel run //src/main/cpp:hello-world
